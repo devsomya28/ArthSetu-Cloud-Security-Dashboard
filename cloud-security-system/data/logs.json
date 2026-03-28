@@ -1,0 +1,530 @@
+[
+    {
+        "user_id": "user1",
+        "ip_address": "192.168.1.10",
+        "action": "login_failed",
+        "timestamp": "2026-03-28 16:14:58.751688"
+    },
+    {
+        "user_id": "user1",
+        "ip_address": "192.168.1.10",
+        "action": "login_failed",
+        "timestamp": "2026-03-28 16:15:00.104284"
+    },
+    {
+        "user_id": "string",
+        "ip_address": "string",
+        "action": "string",
+        "timestamp": "string"
+    },
+    {
+        "user_id": "string",
+        "ip_address": "string",
+        "action": "string",
+        "timestamp": "string"
+    },
+    {
+        "user_id": "string",
+        "ip_address": "string",
+        "action": "string",
+        "timestamp": "string"
+    },
+    {
+        "user_id": "string",
+        "ip_address": "string",
+        "action": "string",
+        "timestamp": "string"
+    },
+    {
+        "user_id": "user1",
+        "ip_address": "192.168.1.10",
+        "action": "login_failed",
+        "timestamp": "2026-03-28 16:30:42.491809"
+    },
+    {
+        "user_id": "string",
+        "ip_address": "string",
+        "action": "string",
+        "timestamp": "string"
+    },
+    {
+        "user_id": "string",
+        "ip_address": "string",
+        "action": "string",
+        "timestamp": "string"
+    },
+    {
+        "user_id": "string",
+        "ip_address": "string",
+        "action": "string",
+        "timestamp": "string"
+    },
+    {
+        "user_id": "string",
+        "ip_address": "string",
+        "action": "string",
+        "timestamp": "string"
+    },
+    {
+        "user_id": "string",
+        "ip_address": "string",
+        "action": "string",
+        "timestamp": "string"
+    },
+    {
+        "user_id": "user1",
+        "ip_address": "192.168.1.10",
+        "action": "login_failed",
+        "timestamp": "2026-03-28 17:02:49.208601"
+    },
+    {
+        "user_id": "user1",
+        "ip_address": "192.168.1.10",
+        "action": "login_failed",
+        "timestamp": "2026-03-28 17:02:50.420159"
+    },
+    {
+        "user_id": "user1",
+        "ip_address": "192.168.1.10",
+        "action": "login_failed",
+        "timestamp": "2026-03-28 17:02:51.270156"
+    },
+    {
+        "user_id": "user1",
+        "ip_address": "192.168.1.10",
+        "action": "login_failed",
+        "timestamp": "2026-03-28 17:02:52.002564"
+    },
+    {
+        "user_id": "user1",
+        "ip_address": "192.168.1.10",
+        "action": "login_failed",
+        "timestamp": "2026-03-28 20:04:57.560581"
+    },
+    {
+        "user_id": "",
+        "ip_address": "",
+        "action": "login_failed",
+        "timestamp": "2026-03-28 20:04:58.872893"
+    },
+    {
+        "user_id": "",
+        "ip_address": "",
+        "action": "login_failed",
+        "timestamp": "2026-03-28 20:05:00.035358"
+    },
+    {
+        "user_id": "",
+        "ip_address": "",
+        "action": "login_failed",
+        "timestamp": "2026-03-28 20:05:01.082004"
+    },
+    {
+        "user_id": "",
+        "ip_address": "",
+        "action": "login_failed",
+        "timestamp": "2026-03-28 20:05:02.326087"
+    },
+    {
+        "user_id": "",
+        "ip_address": "",
+        "action": "login_failed",
+        "timestamp": "2026-03-28 20:05:03.346474"
+    },
+    {
+        "user_id": "",
+        "ip_address": "",
+        "action": "login_failed",
+        "timestamp": "2026-03-28 20:05:04.613801"
+    },
+    {
+        "user_id": "",
+        "ip_address": "",
+        "action": "login_failed",
+        "timestamp": "2026-03-28 20:05:05.297780"
+    },
+    {
+        "user_id": "user1",
+        "ip_address": "192.168.1.10",
+        "action": "login_failed",
+        "timestamp": "2026-03-28 20:05:15.841487"
+    },
+    {
+        "user_id": "",
+        "ip_address": "",
+        "action": "login_failed",
+        "timestamp": "2026-03-28 20:05:17.143501"
+    },
+    {
+        "user_id": "",
+        "ip_address": "",
+        "action": "login_failed",
+        "timestamp": "2026-03-28 20:05:18.478901"
+    },
+    {
+        "user_id": "",
+        "ip_address": "",
+        "action": "login_failed",
+        "timestamp": "2026-03-28 20:05:19.544320"
+    },
+    {
+        "user_id": "",
+        "ip_address": "",
+        "action": "login_failed",
+        "timestamp": "2026-03-28 20:05:20.702042"
+    },
+    {
+        "user_id": "",
+        "ip_address": "",
+        "action": "login_failed",
+        "timestamp": "2026-03-28 20:05:21.509477"
+    },
+    {
+        "user_id": "",
+        "ip_address": "",
+        "action": "login_failed",
+        "timestamp": "2026-03-28 20:08:04.607164"
+    },
+    {
+        "user_id": "",
+        "ip_address": "",
+        "action": "login_failed",
+        "timestamp": "2026-03-28 20:08:06.051212"
+    },
+    {
+        "user_id": "",
+        "ip_address": "",
+        "action": "login_failed",
+        "timestamp": "2026-03-28 20:08:07.343582"
+    },
+    {
+        "user_id": "",
+        "ip_address": "",
+        "action": "login_failed",
+        "timestamp": "2026-03-28 20:08:08.405728"
+    },
+    {
+        "user_id": "",
+        "ip_address": "",
+        "action": "login_failed",
+        "timestamp": "2026-03-28 20:08:09.468283"
+    },
+    {
+        "user_id": "",
+        "ip_address": "",
+        "action": "login_failed",
+        "timestamp": "2026-03-28 20:08:10.423837"
+    },
+    {
+        "user_id": "",
+        "ip_address": "",
+        "action": "login_failed",
+        "timestamp": "2026-03-28 20:08:10.699919"
+    },
+    {
+        "user_id": "",
+        "ip_address": "",
+        "action": "login_failed",
+        "timestamp": "2026-03-28 20:08:12.300417"
+    },
+    {
+        "user_id": "",
+        "ip_address": "",
+        "action": "login_failed",
+        "timestamp": "2026-03-28 20:08:12.516644"
+    },
+    {
+        "user_id": "",
+        "ip_address": "",
+        "action": "login_failed",
+        "timestamp": "2026-03-28 20:08:14.271417"
+    },
+    {
+        "user_id": "",
+        "ip_address": "",
+        "action": "login_failed",
+        "timestamp": "2026-03-28 20:08:14.584623"
+    },
+    {
+        "user_id": "",
+        "ip_address": "",
+        "action": "login_failed",
+        "timestamp": "2026-03-28 20:08:15.988845"
+    },
+    {
+        "user_id": "",
+        "ip_address": "",
+        "action": "login_failed",
+        "timestamp": "2026-03-28 20:08:16.289896"
+    },
+    {
+        "user_id": "",
+        "ip_address": "",
+        "action": "login_failed",
+        "timestamp": "2026-03-28 20:08:18.108730"
+    },
+    {
+        "user_id": "",
+        "ip_address": "",
+        "action": "login_failed",
+        "timestamp": "2026-03-28 20:08:18.377901"
+    },
+    {
+        "user_id": "user1",
+        "ip_address": "192.168.1.10",
+        "action": "login_failed",
+        "timestamp": "2026-03-28 22:38:57.924589"
+    },
+    {
+        "user_id": "",
+        "ip_address": "",
+        "action": "login_failed",
+        "timestamp": "2026-03-28 22:38:59.300516"
+    },
+    {
+        "user_id": "",
+        "ip_address": "",
+        "action": "login_failed",
+        "timestamp": "2026-03-28 22:39:00.424382"
+    },
+    {
+        "user_id": "",
+        "ip_address": "",
+        "action": "login_failed",
+        "timestamp": "2026-03-28 22:39:02.238133"
+    },
+    {
+        "user_id": "",
+        "ip_address": "",
+        "action": "login_failed",
+        "timestamp": "2026-03-28 22:39:03.258043"
+    },
+    {
+        "user_id": "",
+        "ip_address": "",
+        "action": "login_failed",
+        "timestamp": "2026-03-28 22:39:05.245947"
+    },
+    {
+        "user_id": "",
+        "ip_address": "",
+        "action": "login_failed",
+        "timestamp": "2026-03-28 22:39:14.478761"
+    },
+    {
+        "user_id": "",
+        "ip_address": "",
+        "action": "login_failed",
+        "timestamp": "2026-03-28 22:39:15.674690"
+    },
+    {
+        "user_id": "user1",
+        "ip_address": "192.168.1.10",
+        "action": "login_failed",
+        "timestamp": "2026-03-28 22:39:18.705358"
+    },
+    {
+        "user_id": "",
+        "ip_address": "",
+        "action": "login_failed",
+        "timestamp": "2026-03-28 22:39:20.002044"
+    },
+    {
+        "user_id": "",
+        "ip_address": "",
+        "action": "login_failed",
+        "timestamp": "2026-03-28 22:39:21.068880"
+    },
+    {
+        "user_id": "user1",
+        "ip_address": "192.168.1.10",
+        "action": "login_failed",
+        "timestamp": "2026-03-28 22:49:08.331723"
+    },
+    {
+        "user_id": "",
+        "ip_address": "",
+        "action": "login_failed",
+        "timestamp": "2026-03-28 22:49:09.545179"
+    },
+    {
+        "user_id": "",
+        "ip_address": "",
+        "action": "login_failed",
+        "timestamp": "2026-03-28 22:49:10.613611"
+    },
+    {
+        "user_id": "",
+        "ip_address": "",
+        "action": "login_failed",
+        "timestamp": "2026-03-28 22:49:11.567438"
+    },
+    {
+        "user_id": "",
+        "ip_address": "",
+        "action": "login_failed",
+        "timestamp": "2026-03-28 22:49:12.554975"
+    },
+    {
+        "user_id": "",
+        "ip_address": "",
+        "action": "login_failed",
+        "timestamp": "2026-03-28 22:49:14.408422"
+    },
+    {
+        "user_id": "",
+        "ip_address": "",
+        "action": "login_failed",
+        "timestamp": "2026-03-28 22:49:15.819014"
+    },
+    {
+        "user_id": "user1",
+        "ip_address": "192.168.1.10",
+        "action": "login_failed",
+        "timestamp": "2026-03-28 22:49:19.626508"
+    },
+    {
+        "user_id": "",
+        "ip_address": "",
+        "action": "login_failed",
+        "timestamp": "2026-03-28 22:50:22.578141"
+    },
+    {
+        "user_id": "",
+        "ip_address": "",
+        "action": "login_failed",
+        "timestamp": "2026-03-28 22:50:23.909154"
+    },
+    {
+        "user_id": "user1",
+        "ip_address": "192.168.1.10",
+        "action": "login_failed",
+        "timestamp": "2026-03-28 22:50:27.225640"
+    },
+    {
+        "user_id": "",
+        "ip_address": "",
+        "action": "login_failed",
+        "timestamp": "2026-03-28 22:50:28.516006"
+    },
+    {
+        "user_id": "",
+        "ip_address": "",
+        "action": "login_failed",
+        "timestamp": "2026-03-28 22:50:29.810864"
+    },
+    {
+        "user_id": "",
+        "ip_address": "",
+        "action": "login_failed",
+        "timestamp": "2026-03-28 22:50:30.978198"
+    },
+    {
+        "user_id": "user1",
+        "ip_address": "192.168.1.10",
+        "action": "login_failed",
+        "timestamp": "2026-03-28 22:51:00.289909"
+    },
+    {
+        "user_id": "user1",
+        "ip_address": "192.168.1.10",
+        "action": "login_failed",
+        "timestamp": "2026-03-28 22:51:05.656571"
+    },
+    {
+        "user_id": "user1",
+        "ip_address": "192.168.1.10",
+        "action": "login_failed",
+        "timestamp": "2026-03-28 22:51:12.553930"
+    },
+    {
+        "user_id": "user1",
+        "ip_address": "192.168.1.10",
+        "action": "login_failed",
+        "timestamp": "2026-03-28 22:51:17.693585"
+    },
+    {
+        "user_id": "user1",
+        "ip_address": "192.168.1.10",
+        "action": "login_failed",
+        "timestamp": "2026-03-28 22:57:18.057935"
+    },
+    {
+        "user_id": "user1",
+        "ip_address": "192.168.1.10",
+        "action": "login_failed",
+        "timestamp": "2026-03-28 22:57:22.658766"
+    },
+    {
+        "user_id": "string",
+        "ip_address": "string",
+        "action": "string",
+        "timestamp": "string"
+    },
+    {
+        "user_id": "string",
+        "ip_address": "string",
+        "action": "string",
+        "timestamp": "string"
+    },
+    {
+        "user_id": "string",
+        "ip_address": "string",
+        "action": "string",
+        "timestamp": "string"
+    },
+    {
+        "user_id": "string",
+        "ip_address": "string",
+        "action": "string",
+        "timestamp": "string"
+    },
+    {
+        "user_id": "user1",
+        "ip_address": "192.168.1.10",
+        "action": "login_failed",
+        "timestamp": "2026-03-28 23:01:28.776026"
+    },
+    {
+        "user_id": "user1",
+        "ip_address": "192.168.1.10",
+        "action": "login_failed",
+        "timestamp": "2026-03-28 23:01:33.216511"
+    },
+    {
+        "user_id": "user1",
+        "ip_address": "192.168.1.10",
+        "action": "login_failed",
+        "timestamp": "2026-03-28 23:16:05.205482"
+    },
+    {
+        "user_id": "user2",
+        "ip_address": "143.199.2.20",
+        "action": "login_failed",
+        "timestamp": "2026-03-28 23:16:23.849745"
+    },
+    {
+        "user_id": "user1",
+        "ip_address": "192.168.1.10",
+        "action": "login_failed",
+        "timestamp": "2026-03-28 23:18:13.778739"
+    },
+    {
+        "user_id": "user1",
+        "ip_address": "192.168.1.10",
+        "action": "login_failed",
+        "timestamp": "2026-03-28 23:18:21.475626"
+    },
+    {
+        "user_id": "user1",
+        "ip_address": "192.168.1.10",
+        "action": "login_failed",
+        "timestamp": "2026-03-28 23:18:25.532158"
+    },
+    {
+        "user_id": "user1",
+        "ip_address": "192.168.1.10",
+        "action": "login_failed",
+        "timestamp": "2026-03-28 23:18:29.940755"
+    }
+]

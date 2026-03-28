@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ArthSetu | Security Dashboard</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #0f172a;
+            color: white;
+            margin: 0;
+        }
+
+        header {
+            background: #020617;
+            padding: 15px 20px;
+            font-size: 22px;
+            font-weight: bold;
+            color: #22c55e;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        input, button {
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            border: none;
+            width: 100%;
+        }
+
+        button {
+            background: #22c55e;
+            color: white;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background: #16a34a;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        th, td {
+            border: 1px solid #334155;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background: #020617;
+        }
+
+        .alert {
+            background: #dc2626;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .safe {
+            background: #16a34a;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .badge {
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 12px;
+        }
+
+        .threat {
+            background: #dc2626;
+        }
+
+        .clean {
+            background: #16a34a;
+        }
+
+        pre {
+            background: #020617;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    🔐 ArthSetu Security Dashboard
+</header>
+
+<div class="container">
+
+    <div class="grid">
+
+        <!-- INPUT -->
+        <div class="card">
+            <h2>Send Log</h2>
+
+            <form onsubmit="sendLog(event)">
+                <input id="user" placeholder="User ID" required>
+                <input id="ip" placeholder="IP Address" required>
+
+                <button type="submit">Submit Log</button>
+            </form>
+
+            <div id="statusBox"></div>
+        </div>
+
+        <!-- RESPONSE -->
+        <div class="card">
+            <h2>API Response</h2>
+            <pre id="output"></pre>
+            <div id="alertBox"></div>
+        </div>
+
+    </div>
+
+    <!-- LOG HISTORY -->
+    <div class="card">
+        <h2>📊 Log History</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>User</th>
+                    <th>IP</th>
+                    <th>Action</th>
+                    <th>Status</th>
+                    <th>Attempts</th>
+                </tr>
+            </thead>
+            <tbody id="logTable"></tbody>
+        </table>
+    </div>
+
+</div>
+
+<script>
+
+async function sendLog(event) {
+    event.preventDefault();
+
+    const user = document.getElementById("user").value;
+    const ip = document.getElementById("ip").value;
+
+    try {
+        const res = await fetch("http://127.0.0.1:8000/logs", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                user_id: user,
+                ip_address: ip,
+                action: "login_failed"
+            })
+        });
+
+        const data = await res.json();
+
+        document.getElementById("output").innerText =
+            JSON.stringify(data, null, 2);
+
+        const alertBox = document.getElementById("alertBox");
+
+        if (data.threat && data.threat.threat) {
+            alertBox.innerHTML = `
+                <div class="alert">
+                    🚨 Threat Detected: ${data.threat.threat}<br>
+                    ${data.threat.message}
+                </div>
+            `;
+        } else {
+            alertBox.innerHTML = `
+                <div class="safe">
+                    ✅ No Threat Detected
+                </div>
+            `;
+        }
+
+        // Refresh history from backend
+        loadLogs();
+
+    } catch (error) {
+        console.error("Error:", error);
+        document.getElementById("output").innerText =
+            "Error connecting to backend";
+    }
+}
+
+async function loadLogs() {
+    try {
+        const res = await fetch("http://127.0.0.1:8000/logs");
+        const data = await res.json();
+
+        const table = document.getElementById("logTable");
+        table.innerHTML = "";
+
+        data.forEach(log => {
+
+            const status = log.threat && log.threat.threat ? "threat" : "clean";
+            const attempts = log.threat?.attempt_count || 0;
+
+            const row = `
+                <tr>
+                    <td>${log.user_id}</td>
+                    <td>${log.ip_address}</td>
+                    <td>${log.action}</td>
+                    <td>
+                        <span class="badge ${status}">
+                            ${status}
+                        </span>
+                    </td>
+                    <td>${attempts}</td>
+                </tr>
+            `;
+
+            table.innerHTML += row;
+        });
+
+    } catch (err) {
+        console.error("Failed to load logs:", err);
+    }
+}
+
+// Load history on page load
+window.onload = loadLogs;
+
+</script>
+
+</body>
+</html>
