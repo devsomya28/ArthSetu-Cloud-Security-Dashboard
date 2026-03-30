@@ -2,7 +2,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi import FastAPI
 from pydantic import BaseModel
 from .logger import save_log
-from app.detector import detect_threat
+from .detector import detect_threat
 from app.alert import send_alert
 
 app = FastAPI()
