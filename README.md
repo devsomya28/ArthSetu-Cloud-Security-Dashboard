@@ -63,7 +63,7 @@ pip install streamlit pandas scikit-learn
 2️⃣ Run application
 python -m streamlit run app.py
 3️⃣ Open in browser
-http://localhost:8501
+https://arthsetu-cloud-security-dashboard-12.onrender.com/
 🧪 Usage
 Click "Generate New Logs"
 View logs in dashboard
