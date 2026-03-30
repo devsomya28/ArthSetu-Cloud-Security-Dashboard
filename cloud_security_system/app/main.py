@@ -3,7 +3,7 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 from .logger import save_log
 from .detector import detect_threat
-from app.alert import send_alert
+from cloud_security_system.app.alert import send_alert
 
 app = FastAPI()
 
