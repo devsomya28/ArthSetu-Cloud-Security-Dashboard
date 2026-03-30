@@ -27,7 +27,7 @@ class Log(BaseModel):
 
 @app.get("/")
 def home():
-    return {"message": "Cloud Security System Running"}
+    return {"static/index.html"}
 
 # POST API to receive logs
 @app.post("/logs")

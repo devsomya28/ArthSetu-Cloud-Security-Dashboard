@@ -169,7 +169,7 @@ async function sendLog(event) {
     const ip = document.getElementById("ip").value;
 
     try {
-        const res = await fetch("http://127.0.0.1:8000/logs", {
+        const res = await fetch("https://arthsetu-cloud-security-dashboard-12.onrender.com", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -215,7 +215,7 @@ async function sendLog(event) {
 
 async function loadLogs() {
     try {
-        const res = await fetch("http://127.0.0.1:8000/logs");
+        const res = await fetch("https://arthsetu-cloud-security-dashboard-12.onrender.com");
         const data = await res.json();
 
         const table = document.getElementById("logTable");
