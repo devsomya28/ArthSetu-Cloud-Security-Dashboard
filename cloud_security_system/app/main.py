@@ -1,12 +1,15 @@
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi import FastAPI
+from fastapi.responses import FileResponse
 from pydantic import BaseModel
+
 from .logger import save_log
 from .detector import detect_threat
-from cloud_security_system.app.alert import send_alert
+from .alert import send_alert   # ✅ fixed import
 
 app = FastAPI()
 
+# ✅ Enable CORS
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -25,22 +28,21 @@ class Log(BaseModel):
     action: str
     timestamp: str = None
 
+# ✅ Serve HTML frontend
 @app.get("/")
 def home():
-    return {"static/index.html"}
+    return FileResponse("static/index.html")
 
-# POST API to receive logs
+# ✅ POST API to receive logs
 @app.post("/logs")
 def receive_log(log: Log):
     log_dict = log.dict()
 
     saved_log = save_log(log_dict)
-
     threat = detect_threat(log_dict)
 
     send_alert(threat)
 
-    # ✅ Store for history
     logs_db.append({
         "user_id": log.user_id,
         "ip_address": log.ip_address,
@@ -54,7 +56,7 @@ def receive_log(log: Log):
         "threat": threat
     }
 
-# ✅ NEW: GET API for UI history
+# ✅ GET API for UI history
 @app.get("/logs")
 def get_logs():
     return logs_db
